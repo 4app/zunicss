@@ -1,4 +1,4 @@
-# zuniCSS
+# ZuniCSS
 ```html
 <!DOCTYPE HTML>
 <html lang="pt-br">
@@ -6,14 +6,14 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.min.css" type="text/css" media="all" />
-        <title>Suit CSS</title>
+        <title>Zuni CSS</title>
     </head>
 <body>
 
     <!-- content here -->
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 <!--[if lt IE 9]>
     <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
