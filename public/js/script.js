@@ -1,3 +1,14 @@
+/*
+*
+* ------------------------------------------------------
+* script for ZuniCSS 
+* ------------------------------------------------------
+*
+* Estefanio NS <estefanions AT gmail DOT com 
+* project: https://github.com/4app/zunicss
+* page:    http://4app.github.io/zunicss
+*/
+
 $( document ).ready(function() {
 $('.menu_bar').prepend('<div class="menu_bt">Menu</div>');
 	$('.menu_bar .menu_bt').on('click', function(){
@@ -10,7 +21,7 @@ $('.menu_bar').prepend('<div class="menu_bt">Menu</div>');
 		}
 	});
 
-$('.menu_vertical li.has_dropdown>a').on('click', function(){
+$('.menu_sidebar li.has_dropdown>a').on('click', function(){
 		$(this).removeAttr('href');
 		var element = $(this).parent('li');
 		if (element.hasClass('open')) {
@@ -27,11 +38,11 @@ $('.menu_vertical li.has_dropdown>a').on('click', function(){
 			element.siblings('li').find('ul').slideUp();
 		}
 	});
-	$('.menu_vertical>ul>li.has_dropdown>a').append('<span class="holder"></span>');
+	$('.menu_sidebar>ul>li.has_dropdown>a').append('<span class="holder"></span>');
 
 	(function getColor() {
 		var r, g, b;
-		var textColor = $('.menu_vertical').css('color');
+		var textColor = $('.menu_sidebar').css('color');
 		textColor = textColor.slice(4);
 		r = textColor.slice(0, textColor.indexOf(','));
 		textColor = textColor.slice(textColor.indexOf(' ') + 1);
@@ -40,11 +51,11 @@ $('.menu_vertical li.has_dropdown>a').on('click', function(){
 		b = textColor.slice(0, textColor.indexOf(')'));
 		var l = rgbToHsl(r, g, b);
 		if (l > 0.7) {
-			$('.menu_vertical>ul>li>a>span').css('border_color', 'rgba(0, 0, 0, .35)');
+			$('.menu_sidebar>ul>li>a>span').css('border_color', 'rgba(0, 0, 0, .35)');
 		}
 		else
 		{
-			$('.menu_vertical>ul>li>a>span').css('border_color', 'rgba(255, 255, 255, .35)');
+			$('.menu_sidebar>ul>li>a>span').css('border_color', 'rgba(255, 255, 255, .35)');
 		}
 	})();
 

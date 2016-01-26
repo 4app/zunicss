@@ -500,16 +500,16 @@ margin-right: auto;
 }
 
 
-.fl_center{
+.pull_center{
 float: none !important; 
 margin-left: auto !important; 
 margin-right: auto !important;
 clear: both !important
 }
 
-.fl_left{ float: left !important}
-.fl_right{ float: right !important}
-.fl_none{ float: none !important}
+.pull_left{ float: left !important}
+.pull_right{ float: right !important}
+.pull_none{ float: none !important}
 
 .fill_inside{ padding: 1.55%  !important}
 .fill_inside_top{ padding-top: 1.55%; !important}
@@ -549,23 +549,23 @@ padding: 0;
 float: left; clear: both;
 }
 
-.tl, .tl_hover,.tl_border,
-.tl_striped{margin:2px; border-collapse:collapse}
-.tl th,.tl_hover th,
-.tl_border th,
-.tl_striped th{font-weight:bold;color:#444;background:#fff;padding:10px 5px;text-align:left}
+.tl, .tb_hover,.tb_border,
+.tb_striped{margin:2px; border-collapse:collapse}
+.tl th,.tb_hover th,
+.tb_border th,
+.tb_striped th{font-weight:bold;color:#444;background:#fff;padding:10px 5px;text-align:left}
 .tl td,
-.tl_hover td,
-.tl_border td, .tl_striped td{border-bottom:1px solid #444;padding:10px 5px;color:#444;background:#fff}
-.tl_tr_hover td{background:#edeaea}
-.tl_tr_off td{background:#fff}
-.tl_tr_on td{background:#f8f8f8}
-.tl_hover tr:hover td{background:#f8f8f8}
-.tl_border th{border:1px solid #444;font-weight:bold;color:#444;background:#fff;padding:10px 5px;text-align:left}
-.tl_border td{border:1px solid #444;padding:10px 5px;color:#444;background:#fff}
+.tb_hover td,
+.tb_border td, .tb_striped td{border-bottom:1px solid #444;padding:10px 5px;color:#444;background:#fff}
+.tb_tr_hover td{background:#edeaea}
+.tb_tr_off td{background:#fff}
+.tb_tr_on td{background:#f8f8f8}
+.tb_hover tr:hover td{background:#f8f8f8}
+.tb_border th{border:1px solid #444;font-weight:bold;color:#444;background:#fff;padding:10px 5px;text-align:left}
+.tb_border td{border:1px solid #444;padding:10px 5px;color:#444;background:#fff}
 
-.tl_striped tbody >tr:nth-child(2n+1) >td,
-.tl_striped tbody >tr:nth-child(2n+1) >th{ background-color:#F7F7F7}
+.tb_striped tbody >tr:nth-child(2n+1) >td,
+.tb_striped tbody >tr:nth-child(2n+1) >th{ background-color:#F7F7F7}
 
 .lt_horizontal li,
 .lt_horizontal dd{
@@ -615,7 +615,7 @@ font-family:Helvetica,Arial,Verdana,sans-serif;
 background: #d8d8d8
 }
 
-.menu_bar.fl_right > ul > li {
+.menu_bar.pull_right > ul > li {
 float: right
 }
 
@@ -624,15 +624,15 @@ float: left;
 display: inline-block
 }
 
-.menu_bar.fl_center > ul {
+.menu_bar.pull_center > ul {
 float: none;
 text-align: center
 }
-.menu_bar.fl_center > ul > li {
+.menu_bar.pull_center > ul > li {
 float: none
 }
 
-.menu_bar.fl_center ul ul {
+.menu_bar.pull_center ul ul {
 text-align: left
 }
 
@@ -684,7 +684,7 @@ opacity: 0;
 -o-transition: top 0.2s ease, opacity 0.2s ease-in;
 transition: top 0.2s ease, opacity 0.2s ease-in
 }
-.menu_bar.fl_right ul ul {
+.menu_bar.pull_right ul ul {
 text-align: right
 }
 .menu_bar > ul > li > ul::after {
@@ -697,7 +697,7 @@ border-bottom-color: #ffffff;
 top: -4px;
 left: 20px
 }
-.menu_bar.fl_right > ul > li > ul::after {
+.menu_bar.pull_right > ul > li > ul::after {
 left: auto;
 right: 20px
 }
@@ -711,7 +711,7 @@ border-right-color: #ffffff;
 top: 11px;
 left: -4px
 }
-.menu_bar.fl_right ul ul ul::after {
+.menu_bar.pull_right ul ul ul::after {
 border-right-color: transparent;
 border-left-color: #ffffff;
 left: auto;
@@ -725,7 +725,7 @@ top: 52px;
 left: 0;
 opacity: 1
 }
-.menu_bar.fl_right > ul > li:hover > ul {
+.menu_bar.pull_right > ul > li:hover > ul {
 left: auto;
 right: 0
 }
@@ -733,7 +733,7 @@ right: 0
 padding-top: 0;
 padding-left: 6px
 }
-.menu_bar.fl_right ul ul ul {
+.menu_bar.pull_right ul ul ul {
 padding-right: 6px
 }
 .menu_bar ul ul > li:hover > ul {
@@ -741,7 +741,7 @@ left: 180px;
 top: 0;
 opacity: 1
 }
-.menu_bar.fl_right ul ul > li:hover > ul {
+.menu_bar.pull_right ul ul > li:hover > ul {
 left: auto;
 right: 100%;
 opacity: 1
@@ -782,7 +782,7 @@ border-left-color: #777777;
 right: 17px;
 top: 14px
 }
-.menu_bar.fl_right ul ul li.has_sub > a::after {
+.menu_bar.pull_right ul ul li.has_sub > a::after {
 border-left-color: transparent;
 border-right-color: #777;
 right: auto;
@@ -793,29 +793,29 @@ left: 17px
 border-left-color: #2C3E50
 }
 
-.menu_bar.fl_right ul ul li.has_sub.current > a::after,
-.menu_bar.fl_right ul ul li.has_sub:hover > a::after {
+.menu_bar.pull_right ul ul li.has_sub.current > a::after,
+.menu_bar.pull_right ul ul li.has_sub:hover > a::after {
 border-right-color: #2C3E50;
 border-left-color: transparent
 }
 
 
 
-ul.menu_vertical,
-ul.menu_vertical *{
+ul.menu_sidebar,
+ul.menu_sidebar *{
 padding: 0;
 margin: 0
 }
 
-ul.menu_vertical{
+ul.menu_sidebar{
   width: 100%;
   font-family: Helvetica, Arial, sans-serif;
 }
 
 
-ul.menu_vertical,
-ul.menu_vertical li,
-ul.menu_vertical li a {
+ul.menu_sidebar,
+ul.menu_sidebar li,
+ul.menu_sidebar li a {
   border: 0;
   list-style: none;
   line-height: 1;
@@ -827,18 +827,18 @@ ul.menu_vertical li a {
 }
 
 
-ul.menu_vertical ul {
+ul.menu_sidebar ul {
   display: none;
 }
 .align-right {
   float: right;
 }
 
-ul.menu_vertical > li{
+ul.menu_sidebar > li{
     border-bottom: 1px solid #EAE5E5
 }
 
-ul.menu_vertical > li > a {
+ul.menu_sidebar > li > a {
   padding: 15px 20px;
   cursor: pointer;
   z-index: 2;
@@ -850,19 +850,19 @@ ul.menu_vertical > li > a {
 }
 
 
-ul.menu_vertical li > a:hover,
-ul.menu_vertical li.active > a,
-ul.menu_vertical li.open > a {
+ul.menu_sidebar li > a:hover,
+ul.menu_sidebar li.active > a,
+ul.menu_sidebar li.open > a {
   background: #EAE5E5;
 }
 
-ul.menu_vertical li > a:hover > span::after,
-ul.menu_vertical li.active > a > span::after,
-ul.menu_vertical li.open > a > span::after {
+ul.menu_sidebar li > a:hover > span::after,
+ul.menu_sidebar li.active > a > span::after,
+ul.menu_sidebar li.open > a > span::after {
   border-color: #eee;
 }
 
-ul.menu_vertical ul li a {
+ul.menu_sidebar ul li a {
   cursor: pointer;
   padding: 10px 20px;
   z-index: 1;
@@ -872,33 +872,33 @@ ul.menu_vertical ul li a {
   background: #888;
 }
 
-ul.menu_vertical ul li:hover > a,
-ul.menu_vertical ul li.open > a,
-ul.menu_vertical ul li.active > a {
+ul.menu_sidebar ul li:hover > a,
+ul.menu_sidebar ul li.open > a,
+ul.menu_sidebar ul li.active > a {
   background: #666;
   color: #ffffff;
 }
 
 
-ul.menu_vertical ul ul li a {
+ul.menu_sidebar ul ul li a {
   padding-left: 30px;
 }
 
 
-ul.menu_vertical ul ul li {
+ul.menu_sidebar ul ul li {
     border-bottom: 1px solid #999
 }
 
-ul.menu_vertical li > ul > li:last-child > a,
-ul.menu_vertical li > ul > li > a {
+ul.menu_sidebar li > ul > li:last-child > a,
+ul.menu_sidebar li > ul > li > a {
   border-bottom: 1px solid #777;
 }
 
-ul.menu_vertical li > ul > li.open:last-child > ul > li:last-child > a {
+ul.menu_sidebar li > ul > li.open:last-child > ul > li:last-child > a {
   border-bottom: 0;
 }
-ul.menu_vertical li.has_dropdown > a::after,
-ul.menu_vertical ul li.has_dropdown > a::after {
+ul.menu_sidebar li.has_dropdown > a::after,
+ul.menu_sidebar ul li.has_dropdown > a::after {
   display: block;
   position: absolute;
   content: "";
@@ -917,77 +917,77 @@ ul.menu_vertical ul li.has_dropdown > a::after {
 }
 
 
-ul.menu_vertical li.has_dropdown > a::after{
+ul.menu_sidebar li.has_dropdown > a::after{
  border-color: #666
 }
 
 
-ul.menu_vertical ul li.active > a::after,
-ul.menu_vertical ul li.open > a::after,
-ul.menu_vertical ul li > a:hover::after {
+ul.menu_sidebar ul li.active > a::after,
+ul.menu_sidebar ul li.open > a::after,
+ul.menu_sidebar ul li > a:hover::after {
   border-color: #ffffff;
 }
 
 
 
-ul.menu_vertical.menu_primary > li > a {
+ul.menu_sidebar.menu_primary > li > a {
     color: #ccc;
     background: #06c
 }
 
-ul.menu_vertical.menu_primary > li > a:hover {
+ul.menu_sidebar.menu_primary > li > a:hover {
     color: #fff;
     background: #04c
 }
 
-ul.menu_vertical.menu_primary > li{
+ul.menu_sidebar.menu_primary > li{
     border-bottom: 1px solid #07c
 }
 
-ul.menu_vertical.menu_secondary > li > a {
+ul.menu_sidebar.menu_secondary > li > a {
     color: #ccc;
     background: #a00
 }
 
-ul.menu_vertical.menu_secondary > li > a:hover {
+ul.menu_sidebar.menu_secondary > li > a:hover {
     color: #fff;
     background: #c00
 }
 
-ul.menu_vertical.menu_secondary > li{
+ul.menu_sidebar.menu_secondary > li{
     border-bottom: 1px solid #900
 }
 
 
 
 
-ul.menu_vertical.menu_dark > li > a {
+ul.menu_sidebar.menu_dark > li > a {
     color: #ccc;
     background: #222
 }
 
-ul.menu_vertical.menu_dark > li > a:hover {
+ul.menu_sidebar.menu_dark > li > a:hover {
     color: #fff;
     background: #000
 }
 
 
-ul.menu_vertical.menu_dark > li{
+ul.menu_sidebar.menu_dark > li{
     border-bottom: 1px solid #444
 }
 
 
-ul.menu_vertical.menu_light > li > a {
+ul.menu_sidebar.menu_light > li > a {
     color: #666;
     background: #f9f9f9
 }
 
-ul.menu_vertical.menu_light > li > a:hover {
+ul.menu_sidebar.menu_light > li > a:hover {
     color: #444;
     background: #f6f6f6
 }
 
-ul.menu_vertical.menu_light > li{
+ul.menu_sidebar.menu_light > li{
     border-bottom: 1px solid #e5e5e5
 }
 
@@ -995,17 +995,17 @@ ul.menu_vertical.menu_light > li{
 
 
 
-ul.menu_vertical.menu_standard > li > a {
+ul.menu_sidebar.menu_standard > li > a {
     color: #222;
     background: #d6d6d6
 }
 
-ul.menu_vertical.menu_standard > li > a:hover {
+ul.menu_sidebar.menu_standard > li > a:hover {
     color: #444;
     background: #ccc
 }
 
-ul.menu_vertical.menu_standard > li{
+ul.menu_sidebar.menu_standard > li{
     border-bottom: 1px solid #b2b2b2
 }
 
@@ -1033,14 +1033,14 @@ display: none
 display: block;
 border-top: 1px solid rgba(0, 0, 0, 0.1)
 }
-.menu_bar.fl_right > ul {
+.menu_bar.pull_right > ul {
 float: none
 }
-.menu_bar.fl_center > ul {
+.menu_bar.pull_center > ul {
 text-align: left
 }
 .menu_bar > ul > li,
-.menu_bar.fl_right > ul > li {
+.menu_bar.pull_right > ul > li {
 float: none;
 display: block
 }
@@ -1069,11 +1069,11 @@ cursor: pointer
 .menu_bar > ul > li > ul,
 .menu_bar ul ul ul,
 .menu_bar ul ul li:hover > ul,
-.menu_bar.fl_right ul ul,
-.menu_bar.fl_right ul li:hover > ul,
-.menu_bar.fl_right > ul > li > ul,
-.menu_bar.fl_right ul ul ul,
-.menu_bar.fl_right ul ul li:hover > ul {
+.menu_bar.pull_right ul ul,
+.menu_bar.pull_right ul li:hover > ul,
+.menu_bar.pull_right > ul > li > ul,
+.menu_bar.pull_right ul ul ul,
+.menu_bar.pull_right ul ul li:hover > ul {
 left: 0;
 right: auto;
 top: auto;
