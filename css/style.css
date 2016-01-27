@@ -389,6 +389,11 @@ left: 0; top: 0;
  margin: 10px 0;
  float: left;
  clear: both;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px
+
+
 }
 
 .alert_primary{ color: #06c; border: 1px solid #06c; background: #e8f0f6}
