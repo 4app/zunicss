@@ -389,6 +389,11 @@ left: 0; top: 0;
  margin: 10px 0;
  float: left;
  clear: both;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px
+
+
 }
 
 .alert_primary{ color: #06c; border: 1px solid #06c; background: #e8f0f6}
@@ -930,6 +935,12 @@ ul.menu_sidebar ul li > a:hover::after {
 
 
 
+
+
+ul.menu_sidebar.menu_primary li.has_dropdown > a::after {
+    border-color: #00A2CC;
+}
+
 ul.menu_sidebar.menu_primary > li > a {
     color: #ccc;
     background: #06c
@@ -937,11 +948,31 @@ ul.menu_sidebar.menu_primary > li > a {
 
 ul.menu_sidebar.menu_primary > li > a:hover {
     color: #fff;
-    background: #04c
+    background: #04c;
 }
 
 ul.menu_sidebar.menu_primary > li{
     border-bottom: 1px solid #07c
+}
+
+
+ul.menu_sidebar.menu_primary ul li a {
+  background: #07c;
+}
+
+ul.menu_sidebar.menu_primary ul li a:hover {
+  background: #08c;
+}
+
+
+ul.menu_sidebar.menu_primary li > ul > li:last-child > a, 
+ul.menu_sidebar.menu_primary li > ul > li > a {
+    border-bottom: 1px solid #06c;
+}
+
+
+ul.menu_sidebar.menu_secondary li.has_dropdown > a::after {
+    border-color: #6A0005;
 }
 
 ul.menu_sidebar.menu_secondary > li > a {
@@ -954,9 +985,26 @@ ul.menu_sidebar.menu_secondary > li > a:hover {
     background: #c00
 }
 
+
+ul.menu_sidebar.menu_secondary ul li a {
+  background: #850006;
+}
+
+ul.menu_sidebar.menu_secondary ul li a:hover {
+  background: #6A0005;
+}
+
+
+ul.menu_sidebar.menu_secondary li > ul > li:last-child > a, 
+ul.menu_sidebar.menu_secondary li > ul > li > a {
+    border-bottom: 1px solid #5D0003;
+}
+
+
 ul.menu_sidebar.menu_secondary > li{
     border-bottom: 1px solid #900
 }
+
 
 
 
@@ -968,12 +1016,21 @@ ul.menu_sidebar.menu_dark > li > a {
 
 ul.menu_sidebar.menu_dark > li > a:hover {
     color: #fff;
-    background: #000
+    background: #111
 }
 
 
 ul.menu_sidebar.menu_dark > li{
     border-bottom: 1px solid #444
+}
+
+
+ul.menu_sidebar.menu_dark ul li a {
+  background: #444;
+}
+
+ul.menu_sidebar.menu_dark ul li a:hover {
+  background: #222;
 }
 
 
@@ -1225,5 +1282,4 @@ border-top-color: #666
 .menu_bar.bg_dark > ul > li.has_sub:hover > a {
 border-top-color: #fff
 }
-
 
