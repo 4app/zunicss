@@ -13,7 +13,6 @@
             $rootScope.curr = $location.path();
             $rootScope.title = 'Grid - ';
 
-
         });
 
     app.controller('TypographyController', 
@@ -34,7 +33,7 @@
          function($rootScope, $location)
          {
              $rootScope.curr = $location.path();
-             $rootScope.title = 'Form -';
+             $rootScope.title = 'Form - ';
           });
 
     app.controller('ButtonsController', 
