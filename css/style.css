@@ -1221,6 +1221,26 @@ color: #ccc
 color: #fff;
 background: #06c
 }
+
+.menu_bar.bg_primary.hover_dark > ul > li:hover > a,
+.menu_bar.bg_primary.hover_dark > ul > li.current > a 
+{ color: #fff; background: #222 }
+
+
+.menu_bar.bg_primary.hover_secondary > ul > li:hover > a,
+.menu_bar.bg_primary.hover_secondary > ul > li.current > a 
+{ color: #fff; background: #a00 }
+
+.menu_bar.bg_primary.hover_light > ul > li:hover > a,
+.menu_bar.bg_primary.hover_light > ul > li.current > a 
+{ color: #000; background: #d6d6d6 }
+
+
+.menu_bar.bg_primary.hover_standard > ul > li:hover > a,
+.menu_bar.bg_primary.hover_standard > ul > li.current > a 
+{ color: #000; background: #ccc }
+
+
 /* ------------------------- */
 
 .menu_bar.bg_secondary {
@@ -1237,6 +1257,26 @@ color: #ccc
 color: #fff;
 background: #c00
 }
+
+
+.menu_bar.bg_secondary.hover_primary > ul > li:hover > a,
+.menu_bar.bg_secondary.hover_primary > ul > li.current > a 
+{ color: #fff; background: #06a }
+
+
+.menu_bar.bg_secondary.hover_dark > ul > li:hover > a,
+.menu_bar.bg_secondary.hover_dark > ul > li.current > a 
+{ color: #fff; background: #222 }
+
+.menu_bar.bg_secondary.hover_light > ul > li:hover > a,
+.menu_bar.bg_secondary.hover_light > ul > li.current > a 
+{ color: #000; background: #d6d6d6 }
+
+
+.menu_bar.bg_secondary.hover_standard > ul > li:hover > a,
+.menu_bar.bg_secondary.hover_standard > ul > li.current > a 
+{ color: #000; background: #ccc }
+
 /* ------------------------- */
 
 
@@ -1254,6 +1294,25 @@ color: #222
 color: #000;
 background: #d6d6d6
 }
+
+.menu_bar.bg_light.hover_primary > ul > li:hover > a,
+.menu_bar.bg_light.hover_primary > ul > li.current > a 
+{ color: #fff; background: #06a }
+
+
+.menu_bar.bg_light.hover_secondary > ul > li:hover > a,
+.menu_bar.bg_light.hover_secondary > ul > li.current > a 
+{ color: #fff; background: #a00 }
+
+.menu_bar.bg_light.hover_dark > ul > li:hover > a,
+.menu_bar.bg_light.hover_dark > ul > li.current > a 
+{ color: #fff; background: #222 }
+
+
+.menu_bar.bg_light.hover_standard > ul > li:hover > a,
+.menu_bar.bg_light.hover_standard > ul > li.current > a 
+{ color: #000; background: #ccc }
+
 /* ------------------------- */
 
 
@@ -1282,4 +1341,25 @@ border-top-color: #666
 .menu_bar.bg_dark > ul > li.has_sub:hover > a {
 border-top-color: #fff
 }
+
+.menu_bar.bg_dark.hover_primary > ul > li:hover > a,
+.menu_bar.bg_dark.hover_primary > ul > li.current > a 
+{ color: #fff; background: #06a }
+
+
+.menu_bar.bg_dark.hover_secondary > ul > li:hover > a,
+.menu_bar.bg_dark.hover_secondary > ul > li.current > a 
+{ color: #fff; background: #a00 }
+
+.menu_bar.bg_dark.hover_light > ul > li:hover > a,
+.menu_bar.bg_dark.hover_light > ul > li.current > a 
+{ color: #000; background: #d6d6d6 }
+
+
+.menu_bar.bg_dark.hover_standard > ul > li:hover > a,
+.menu_bar.bg_dark.hover_standard > ul > li.current > a 
+{ color: #000; background: #ccc }
+
+
+
 
