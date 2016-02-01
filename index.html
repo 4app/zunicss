@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" ng-app="app">
     <head>
       <meta charset="UTF-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Zuni CSS example</title>
+      <title>{{title}}ZuniCSS</title>
 
             <link rel="stylesheet" href="public/css/style.min.css" type="text/css" media="all" />
     </head>
@@ -13,25 +13,25 @@
   <div class="container">
       <div class="menu_bar bg_dark">
           <ul>
-            <li><a href="#">ZuniCSS</a></li>
-            <li class="has_dropdown">
+            <li ng-class="{current: curr == '/'}"><a href="#/"  >ZuniCSS</a></li>
+            <li class="has_dropdown" ng-class="{current: curr == '/grid' || curr == '/typography' || curr == '/tables' || curr == '/form' || curr == '/buttons' || curr == '/images' }">
                 <a href="#">Base CSS</a>
                 <ul>
-                  <li><a href="#">Grid</a></li>
-                  <li><a href="#">Typography</a></li>
-                  <li><a href="#">Tables</a></li>
-                  <li><a href="#">Form & Inputs</a></li>
-                  <li><a href="#">Buttons</a></li>
-                  <li><a href="#">Images</a></li>
+                  <li><a href="#/grid">Grid</a></li>
+                  <li><a href="#/typography">Typography</a></li>
+                  <li><a href="#/tables">Tables</a></li>
+                  <li><a href="#/form">Form & Inputs</a></li>
+                  <li><a href="#/buttons">Buttons</a></li>
+                  <li><a href="#/images">Images</a></li>
                 </ul>
               </li>
-              <li class="has_dropdown">
+              <li class="has_dropdown" ng-class="{current: curr == '/menu-bar' || curr == '/menu-sidebar'}">
                 <a href="#">Widgets</a>
                 <ul>
                     <li><a href="#">Menu</a>
                         <ul>
-                            <li><a href="#">Bar</a></li>
-                            <li><a href="#">Sidebar</a></li>
+                            <li><a href="#/menu-bar">Bar</a></li>
+                            <li><a href="#/menu-sidebar">Sidebar</a></li>
                         </ul>
                     </li>
                 </ul>    
@@ -42,28 +42,14 @@
   </div>
 </div>
 
-    <div class="container">
-        <div class="page_header">
-            <h1 class="tx_right">ZuniCSS</h1>
-        </div>
-        
-        <div class="wg12">
-            <div class="row">
-                <div class="wg6 wg_tablet12">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pellentesque dolor mauris, laoreet ac convallis non,
-                    mattis eget tellus. Praesent vitae lobortis orci.
-                    Interdum et malesuada fames ac ante ipsum primis
-                </div>
-            </div>
-             <div class="expand">
-                <a class="bt bt_primary" href="https://github.com/4app/zunicss/zipball/master">Download</a>
-             </div>
-        </div>
-    
-    </div>
+    <div class="container" ng-view></div>
 
-    
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script> 
+    <script type="text/javascript" src="public/js/app/app.js"></script>
+    <script type="text/javascript" src="public/js/app/controllers.js"></script>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="public/js/script.min.js" ></script>
 
